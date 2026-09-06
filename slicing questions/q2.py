@@ -4,4 +4,5 @@ import numpy as np
 a=np.arange(9)
 
 print(a)
-print(a[0::2])
+b=a[0::2]
+print(b)

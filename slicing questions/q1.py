@@ -3,5 +3,5 @@
 import numpy as np
 
 a=np.arange(9)
-
-print(a[0:5])
+b=a[0:5]
+print(b)
