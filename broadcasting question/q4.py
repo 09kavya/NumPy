@@ -7,5 +7,6 @@ a = np.array([[3, 4],
 norm = np.linalg.norm(a, axis=0, keepdims=True)
 
 b = a / norm
+c=np.mean(a)
 
-print(b)
+print(b-c)
