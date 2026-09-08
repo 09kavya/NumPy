@@ -1,7 +1,12 @@
-#Add Column Vector to Matrix
-
+#Normalize Each Row Given a matrix, subtract the mean of each row from every element of that row using broadcasting.
+ 
 import numpy as np
 
-a=np.arange(9).reshape(3,3)
-b=np.arange(3).reshape(3,1)
-print(a+b)
+a = np.array([[3, 4],
+              [5, 12]])
+
+norm = np.linalg.norm(a, axis=1, keepdims=True)
+
+b = a / norm
+
+print(b)

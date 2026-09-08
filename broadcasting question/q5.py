@@ -1,12 +1,9 @@
-#Normalize Each Row
- 
+#Row-wise maximum difference
+
 import numpy as np
 
-a = np.array([[3, 4],
-              [5, 12]])
-
-norm = np.linalg.norm(a, axis=1, keepdims=True)
-
-b = a / norm
-
+a=np.random.random((9)).reshape(3,3)
+b=np.round(a*100)
+print(b)
+b=np.min(b)
 print(b)

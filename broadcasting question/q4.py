@@ -1,7 +1,11 @@
-#Given an n × m matrix and an n-element array, add the array to every column using broadcasting.
-
+#Normalize Each Column subtract the mean of each row from its elements using broadcasting
 import numpy as np
 
-a=np.arange(9).reshape(3,3)
-b=np.arange(3).reshape(3,1)
-print(a+b)
+a = np.array([[3, 4],
+              [5, 12]])
+
+norm = np.linalg.norm(a, axis=0, keepdims=True)
+
+b = a / norm
+
+print(b)

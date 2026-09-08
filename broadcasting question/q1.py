@@ -1,4 +1,4 @@
-#Add Row Vector to Matrix
+#Add Row Vector to Matrix Given an n × m matrix and an m-element array, add the array to every row using broadcasting.
 
 import numpy as np
 a=np.arange(3)
