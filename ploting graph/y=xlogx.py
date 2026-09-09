@@ -1,8 +1,10 @@
-#plot graph of x=y 2d plot
+#y=x log x
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 x=np.linspace(-10,10,100)
-y=x
+y=x*np.log(x)
+
 plt.plot(x,y)
 plt.show()

@@ -1,8 +1,8 @@
-#plot graph of x=y 2d plot
+#y=sin(x) graph
 import numpy as np
 import matplotlib.pyplot as plt
 
 x=np.linspace(-10,10,100)
-y=x
+y=np.sin(x)
 plt.plot(x,y)
 plt.show()
